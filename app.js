@@ -1,4 +1,15 @@
-for (i = 1; i <=100; i++) {
+
+$(document).ready(function() {
+	$("#promptbutton").click(function fizzbuzz(cool) {
+   
+    var number=prompt("enter a number");
+    if (number == NaN){
+    	prompt("That is not a number. Enter a number.");
+    
+    } else {
+    
+    for (i = 1; i <=number; i++) 
+    	{
 	if (i%15==0)
 		console.log("fizzbuzz");
 
@@ -7,7 +18,12 @@ for (i = 1; i <=100; i++) {
 
     else if (i%3==0) 
 		console.log("fizz");
-	
+
 	else 
 		console.log(i);
+		}
 }
+})
+});
+
+
